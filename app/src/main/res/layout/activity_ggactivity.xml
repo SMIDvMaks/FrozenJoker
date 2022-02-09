@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game.GGActivity"
+    android:background="@mipmap/bg">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="488dp"
+        android:layout_height="892dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_gamespace"
+        tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="339dp"
+        android:layout_height="239dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658">
+
+        <ImageView
+            android:id="@+id/princes1"
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"/>
+<!--            app:srcCompat="@drawable/ic_slot_1" -->
+
+
+        <ImageView
+            android:id="@+id/princes2"
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"/>
+<!--            app:srcCompat="@drawable/ic_slot_2" -->
+
+
+        <ImageView
+            android:id="@+id/kristal"
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:layout_weight="1"/>
+
+        <!--            app:srcCompat="@drawable/ic_slot_3" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/snezka"
+        android:visibility="invisible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="676dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_slot_sneg" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/btn"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/zirka"
+        android:visibility="invisible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="676dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_slot_zirka" />
+
+    <ImageView
+        android:id="@+id/vinograd"
+        android:visibility="invisible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="676dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_slot_vinograd" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/txt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please start Game"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/snezka"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <Button
+        android:id="@+id/btn_rest"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/btn"
+        android:visibility="invisible"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/restik"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/btn"
+        android:text="Restart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
