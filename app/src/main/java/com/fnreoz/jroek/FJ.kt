@@ -11,7 +11,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
-import android.util.Log
 import android.view.View
 import android.webkit.*
 import com.fnreoz.jroek.Webocka.*
@@ -34,8 +33,8 @@ class FJ : AppCompatActivity() {
     lateinit var wekamq: WebView
     var lasters: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onCreate(sysyq: Bundle?) {
+        super.onCreate(sysyq)
         setContentView(R.layout.activity_main)
         wekamq = findViewById(R.id.webecha)
         window.addFlags(1024)
@@ -54,7 +53,7 @@ class FJ : AppCompatActivity() {
                 super.onPageStarted(wiqms, aoqk, losnq)
                 progrees.visibility = View.INVISIBLE
                 txt_Load.visibility = View.INVISIBLE
-                if (aoqk?.contains(teskqs.Liqsresa("NDA0")) == true) startGG()
+                if (aoqk?.contains(teskqs.Liqsresa("Z2FwcHM9NDA0")) == true) startGG()
             }
 
             @SuppressLint("CommitPrefEdits")
